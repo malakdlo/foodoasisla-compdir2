@@ -11,9 +11,6 @@
   
   <div class="well">
     <div class="text-center">
-      <p><b>NOTE: SEARCHES ARE STRICT, SO RESULTS WILL ONLY RETURN ORGANIZATIONS IF THEY CONTAIN ALL, NOT JUST SOME, OF YOUR SELECTED CATEGORIES.</b></p>
-      <!--<p>Select one or more categories, then click the <b>Search</b> button to search the categories selected.</p>
-      <p>Select <b>Clear Search</b> to begin selecting categories again.</p>-->
     </div>
     
     <form ng-submit="searchValues()" novalidate>
@@ -23,27 +20,27 @@
         <div class="col-md-3">
           <div class="checkbox">
           <label> 
-              <input type="checkbox" value="" ng-model="categoryModel['Non-Profit Organization']" uib-btn-checkbox>Non-Profit Organization
+              <input type="checkbox" ng-model="categoryModel['Non-Profit Organization']">Non-Profit Organization
             </label>
           </div>  
           <div class="checkbox">
           <label> 
-              <input type="checkbox" value="" ng-model="categoryModel['Religious']" uib-btn-checkbox>Religious
+              <input type="checkbox" ng-model="categoryModel['Religious']">Religious
             </label>
           </div>  
           <div class="checkbox">
           <label>
-              <input type="checkbox" value="" ng-model="categoryModel['Government Agency']" uib-btn-checkbox>Government Agency
+              <input type="checkbox" ng-model="categoryModel['Government Agency']">Government Agency
             </label>
           </div>  
           <div class="checkbox">
           <label>
-              <input type="checkbox" value="" ng-model="categoryModel['Government Subsidy']" uib-btn-checkbox>Government Subsidy
+              <input type="checkbox" ng-model="categoryModel['Government Subsidy']">Government Subsidy
             </label>
           </div>  
           <div class="checkbox">
             <label>
-              <input type="checkbox" value="" ng-model="categoryModel['For-Profit']" uib-btn-checkbox>For-Profit
+              <input type="checkbox" ng-model="categoryModel['For-Profit']">For-Profit
             </label>
           </div>
         </div><!-- End First group of checkboxes -->
@@ -52,27 +49,27 @@
         <div class="col-md-3">
           <div class="checkbox">
             <label>
-              <input type="checkbox" value="" ng-model="categoryModel['Community-Based Organization or Individual']" uib-btn-checkbox>Community-Based Organization or Individual
+              <input type="checkbox" value="" ng-model="categoryModel['Community-Based Organization or Individual']" >Community-Based Organization or Individual
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox" value="" ng-model="categoryModel['Research and Studies']" uib-btn-checkbox>Research and Studies
+              <input type="checkbox" value="" ng-model="categoryModel['Research and Studies']" >Research and Studies
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox" value="" ng-model="categoryModel['Food Resource']" uib-btn-checkbox>Food Resource
+              <input type="checkbox" value="" ng-model="categoryModel['Food Resource']" >Food Resource
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox" ng-model="categoryModel['Farming / Gardening']" uib-btn-checkbox>Farming / Gardening
+              <input type="checkbox" ng-model="categoryModel['Farming / Gardening']" >Farming / Gardening
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox" ng-model="categoryModel['Legislation']" uib-btn-checkbox>Legislation
+              <input type="checkbox" ng-model="categoryModel['Legislation']" >Legislation
             </label>
           </div>
         </div><!-- End Second group of checkboxes -->
@@ -81,27 +78,27 @@
         <div class="col-md-3">
           <div class="checkbox">
             <label>
-              <input type="checkbox" ng-model="categoryModel['Advocacy']" uib-btn-checkbox>Advocacy
+              <input type="checkbox" ng-model="categoryModel['Advocacy']" >Advocacy
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox" ng-model="categoryModel['Food Waste']" uib-btn-checkbox>Food Waste
+              <input type="checkbox" ng-model="categoryModel['Food Waste']" >Food Waste
             </label>
           </div>
           <div class="checkbox">
           <label> 
-              <input type="checkbox" value="" ng-model="categoryModel['Skill Building / Educational']" uib-btn-checkbox>Skill Building / Educational
+              <input type="checkbox" value="" ng-model="categoryModel['Skill Building / Educational']" >Skill Building / Educational
             </label>
           </div>  
           <div class="checkbox">
           <label> 
-              <input type="checkbox" value="" ng-model="categoryModel['Economic and Community Development']" uib-btn-checkbox>Economic and Community Development
+              <input type="checkbox" value="" ng-model="categoryModel['Economic and Community Development']" >Economic and Community Development
             </label>
           </div>  
           <div class="checkbox">
           <label>
-              <input type="checkbox" value="" ng-model="categoryModel['Youth']" uib-btn-checkbox>Youth
+              <input type="checkbox" value="" ng-model="categoryModel['Youth']" >Youth
             </label>
           </div>  
         </div><!-- End Third group of checkboxes -->
@@ -110,45 +107,50 @@
         <div class="col-md-3">
           <div class="checkbox">
           <label>
-              <input type="checkbox" value="" ng-model="categoryModel['WIC']" uib-btn-checkbox>WIC
+              <input type="checkbox" value="" ng-model="categoryModel['WIC']" >WIC
             </label>
           </div>  
           <div class="checkbox">
           <label> 
-              <input type="checkbox" value="" ng-model="categoryModel['Seniors']" uib-btn-checkbox>Seniors
+              <input type="checkbox" value="" ng-model="categoryModel['Seniors']" >Seniors
             </label>
           </div>  
           <div class="checkbox">
           <label> 
-              <input type="checkbox" value="" ng-model="categoryModel['Obese']" uib-btn-checkbox>Obese
+              <input type="checkbox" value="" ng-model="categoryModel['Obese']" >Obese
             </label>
           </div>  
         </div><!-- End Fourth group of checkboxes -->
           
       </div><!-- End Category Filter Checkboxes Row 1 -->
       
-      
+      <!-- -->
       <div class="row text-center" style="margin-top: 5%">
         <p>Search for any of the following: </p>
-        <ul>
+        <!--<ul>
           <li ng-repeat="x in searchResults">{{x}}</li>
-        </ul>
+        </ul>-->
+        <p ng-repeat="x in searchResults">{{x}}</p>
         <button class="btn btn-primary" type="submit" value="Search">Search Food</button>
         <button class="btn btn-primary" type="button" ng-click="clearValues()">Clear Search</button>
       </div>
+      
     </form>
       
   </div>
   
-  <ul ng-show="searchV">
-    <li class="artist cf" ng-repeat="item in organizations | filterBy: ['categories']: searchV">
-      <a href="#/details/{{organizations.indexOf(item)}}">
+  <div ng-show="searchV">
+    <div ng-repeat="item in organizations | filterBy: ['categories']: searchV">
         <div class="info">
           <h2>{{item.orgName}}</h2>
+          <a href="{{item.website}}" target="_blank">
           <h3>{{item.website}}</h3>
-          <p>{{item.orgType}}</p>
+          </a>  
+          <p><b>Tags: </b><span>{{item.categories}}</span></p>
         </div>
-      </a>
-    </li>
-  </ul>  
+    </div>
+  </div>
+  
+  
+  <th ng-show="{{ exArr | contains: 2 }}">...</th>
 </div>

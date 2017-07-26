@@ -7,17 +7,20 @@ companyControllers.controller('ListController', ['$scope', '$http', function($sc
       console.log($scope.organizations);
     }); // End HTTP Get
    
-    /* Search and Clear */
+  
+    /*** Search Data and Functions ***/
     $scope.searchResults = [];
+  
+    /* Search begin */
     $scope.searchValues = function(){
       //$scope.searchResults = $scope.searchResults.concat(newArrValues);
-      console.log("Posting Search Values");
-      console.log($scope.searchResults);
+      console.log("Posting Search Values", $scope.searchResults);
       $scope.searchV = $scope.searchResults.join(", ");
-      console.log("Searching For: ");
-      console.log($scope.searchV);
+      console.log("Searching For: ", $scope.searchV);
       return $scope.searchV;
-    }
+    }/* Search end */
+    
+    /* clearValues begin */
     $scope.clearValues = function(){
       $scope.searchResults.forEach(function(x){
         $scope.categoryModel[x] = false;
@@ -28,7 +31,7 @@ companyControllers.controller('ListController', ['$scope', '$http', function($sc
       console.log("Search V Has Been Reset To: " + $scope.searchV);
       console.log("Category Model Reset to: " + JSON.stringify($scope.categoryModel));
       return;
-    }
+    }/* clearValues end */
 
     /* Category Model */
     $scope.categoryModel = {
@@ -56,6 +59,7 @@ companyControllers.controller('ListController', ['$scope', '$http', function($sc
       'Seniors': false,
       'Obese': false
     };
+  
     $scope.$watchCollection('categoryModel', function(){
       $scope.searchResults = [];
       angular.forEach($scope.categoryModel, function(value, key){
@@ -66,12 +70,18 @@ companyControllers.controller('ListController', ['$scope', '$http', function($sc
       console.log("Updating Categories Search Results");
       console.log($scope.searchResults);
     });// End watchCollection
+  
     $scope.searchCategoryResources = function(){
       $scope.categorySearch = $scope.categoryResults.join(", ");
       console.log("Category Search");
       console.log($scope.categorySearch);
       return $scope.categorySearch;
     };
+  
+  
+  
+    /*** Example 1 *****/
+    $scope.exArr = [1,2,3,4];
   
 }]);
 

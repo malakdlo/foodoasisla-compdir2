@@ -27,31 +27,31 @@
       "id":"5",
       "orgName":"California Department of Education, Commodity Supplemental Food Program",
       "website":"http://www.cde.ca.gov/ls/nu/fd/csfp.asp",
-      "categories":"Government Acency, Legislation, WIC, Seniors "
+      "categories":"Government Agency, Legislation, WIC, Seniors "
    },
    {
       "id":"6",
       "orgName":"California Department of Public Health, Nutrition Education and Obesity Prevention Branch",
       "website":"https://www.cdph.ca.gov/programs/NEOPB/Pages/Default.aspx",
-      "categories":"Government Acency, Advocacy, Obese "
+      "categories":"Government Agency, Advocacy, Obese "
    },
    {
       "id":"7",
       "orgName":"California Department of Public Health, Nutrition Education and Obesity Prevention Branch",
       "website":"http://www.dss.cahwnet.gov/efap/",
-      "categories":"Government Acency, Legislation "
+      "categories":"Government Agency, Legislation "
    },
    {
       "id":"8",
       "orgName":"California Department of Public Health, WIC Centers",
       "website":"https://m.wic.ca.gov/WICMobile/Clinics/ClinicSearch.aspx",
-      "categories":"Government Acency, Government Subsidy, WIC "
+      "categories":"Government Agency, Government Subsidy, WIC "
    },
    {
       "id":"9",
       "orgName":"California Department of Public Health, Women Infants and Children Program",
       "website":"https://www.cdph.ca.gov/programs/wicworks/pages/default.aspx",
-      "categories":"Government Acency, Government Subsidy, WIC "
+      "categories":"Government Agency, Government Subsidy, WIC "
    },
    {
       "id":"10",
@@ -81,19 +81,19 @@
       "id":"14",
       "orgName":"Community Redevelopment Agency of the City of Los Angeles, Community Market Conversion Program",
       "website":"http://www.crala.org/internet-site/Other/Healthy_Food_Access.cfm",
-      "categories":"Government Acency, Food Resource "
+      "categories":"Government Agency, Food Resource "
    },
    {
       "id":"15",
       "orgName":"Community Redevelopment Agency of the City of Los Angeles, Food Retailers Incentive Program",
       "website":"http://www.crala.org/internet-site/Other/Healthy_Food_Access.cfm",
-      "categories":"Government Acency, Advocacy "
+      "categories":"Government Agency, Advocacy "
    },
    {
       "id":"16",
       "orgName":"Community Redevelopment Agency of the City of Los Angeles, Fresh Works Fund",
       "website":"http://www.crala.org/internet-site/Other/Healthy_Food_Access.cfm",
-      "categories":"Government Acency, Economic and Community Development "
+      "categories":"Government Agency, Economic and Community Development "
    },
    {
       "id":"17",
